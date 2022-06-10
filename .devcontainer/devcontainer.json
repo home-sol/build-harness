@@ -14,10 +14,16 @@
         "vscode": {
             // Set *default* container specific settings.json values on container create.
             "settings": {
-                "terminal.integrated.defaultProfile.linux": "bash"
+                "terminal.integrated.defaultProfile.linux": "bash",
+                "files.associations": {
+                    "Dockerfile.*": "dockerfile",
+                    "Makefile.*": "makefile",
+                    "*.Makefile": "makefile"
+                }
             },
             // Add the IDs of extensions you want installed when the container is created.
             "extensions": [
+                "GitHub.copilot",   // Github copilot
                 "mads-hartmann.bash-ide-vscode", // bash
                 "rogalmic.bash-debug",   // bash
                 "ldez.ignore-files",     // .gitignore and .dockerignore syntax
